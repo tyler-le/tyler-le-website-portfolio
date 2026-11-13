@@ -1,6 +1,8 @@
 # Tyler Le portfolio — local design exploration
 
-The original `index.html`, `styles.css`, and `script.js` are preserved. Nothing has been published.
+[Website](https://www.tylerle.dev/) · [3D Gallery](https://www.tylerle.dev/options/gallery.html) · [Design comparison](https://www.tylerle.dev/compare.html)
+
+A personal portfolio with interactive experience cards and alternative layouts. The original `index.html`, `styles.css`, and `script.js` are preserved; the gallery and comparison use separate pages.
 
 Run `python3 -m http.server 4317 --bind 127.0.0.1` from this directory, then open http://127.0.0.1:4317/compare.html. No build or package installation is needed.
 
