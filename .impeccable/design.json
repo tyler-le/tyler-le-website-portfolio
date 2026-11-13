@@ -1,0 +1,577 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-13T06:58:51.168121+00:00",
+  "title": "Design System: Tyler Le \u2014 3D Gallery",
+  "extensions": {
+    "colorMeta": {
+      "gallery-ink": {
+        "displayName": "Gallery Ink",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0033 303.1)",
+          "oklch(25% 0.0066 303.1)",
+          "oklch(35% 0.0094 303.1)",
+          "oklch(47% 0.0111 303.1)",
+          "oklch(59% 0.0111 303.1)",
+          "oklch(71% 0.0094 303.1)",
+          "oklch(83% 0.0055 303.1)",
+          "oklch(95% 0.0011 303.1)"
+        ]
+      },
+      "gallery-muted": {
+        "displayName": "Gallery Muted",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0060 299.0)",
+          "oklch(25% 0.0120 299.0)",
+          "oklch(35% 0.0169 299.0)",
+          "oklch(47% 0.0199 299.0)",
+          "oklch(59% 0.0199 299.0)",
+          "oklch(71% 0.0169 299.0)",
+          "oklch(83% 0.0100 299.0)",
+          "oklch(95% 0.0020 299.0)"
+        ]
+      },
+      "gallery-dock": {
+        "displayName": "Gallery Dock",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0057 272.0)",
+          "oklch(25% 0.0115 272.0)",
+          "oklch(35% 0.0162 272.0)",
+          "oklch(47% 0.0191 272.0)",
+          "oklch(59% 0.0191 272.0)",
+          "oklch(71% 0.0162 272.0)",
+          "oklch(83% 0.0096 272.0)",
+          "oklch(95% 0.0019 272.0)"
+        ]
+      },
+      "gallery-focus-default": {
+        "displayName": "Gallery Focus Default",
+        "role": "primary",
+        "tonalRamp": [
+          "oklch(15% 0.0241 269.1)",
+          "oklch(25% 0.0483 269.1)",
+          "oklch(35% 0.0684 269.1)",
+          "oklch(47% 0.0805 269.1)",
+          "oklch(59% 0.0805 269.1)",
+          "oklch(71% 0.0684 269.1)",
+          "oklch(83% 0.0402 269.1)",
+          "oklch(95% 0.0080 269.1)"
+        ]
+      },
+      "google-surface": {
+        "displayName": "Google Surface",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0009 264.5)",
+          "oklch(25% 0.0017 264.5)",
+          "oklch(35% 0.0024 264.5)",
+          "oklch(47% 0.0029 264.5)",
+          "oklch(59% 0.0029 264.5)",
+          "oklch(71% 0.0024 264.5)",
+          "oklch(83% 0.0014 264.5)",
+          "oklch(95% 0.0003 264.5)"
+        ]
+      },
+      "google-ink": {
+        "displayName": "Google Ink",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0038 258.4)",
+          "oklch(25% 0.0075 258.4)",
+          "oklch(35% 0.0106 258.4)",
+          "oklch(47% 0.0125 258.4)",
+          "oklch(59% 0.0125 258.4)",
+          "oklch(71% 0.0106 258.4)",
+          "oklch(83% 0.0063 258.4)",
+          "oklch(95% 0.0013 258.4)"
+        ]
+      },
+      "google-accent": {
+        "displayName": "Google Accent",
+        "role": "primary",
+        "tonalRamp": [
+          "oklch(15% 0.0241 269.1)",
+          "oklch(25% 0.0483 269.1)",
+          "oklch(35% 0.0684 269.1)",
+          "oklch(47% 0.0805 269.1)",
+          "oklch(59% 0.0805 269.1)",
+          "oklch(71% 0.0684 269.1)",
+          "oklch(83% 0.0402 269.1)",
+          "oklch(95% 0.0080 269.1)"
+        ]
+      },
+      "google-room": {
+        "displayName": "Google Room",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0050 268.9)",
+          "oklch(25% 0.0099 268.9)",
+          "oklch(35% 0.0141 268.9)",
+          "oklch(47% 0.0166 268.9)",
+          "oklch(59% 0.0166 268.9)",
+          "oklch(71% 0.0141 268.9)",
+          "oklch(83% 0.0083 268.9)",
+          "oklch(95% 0.0017 268.9)"
+        ]
+      },
+      "coursera-surface": {
+        "displayName": "Coursera Surface",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0540 260.2)",
+          "oklch(25% 0.1080 260.2)",
+          "oklch(35% 0.1530 260.2)",
+          "oklch(47% 0.1800 260.2)",
+          "oklch(59% 0.1800 260.2)",
+          "oklch(71% 0.1530 260.2)",
+          "oklch(83% 0.0900 260.2)",
+          "oklch(95% 0.0180 260.2)"
+        ]
+      },
+      "coursera-ink": {
+        "displayName": "Coursera Ink",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0000 89.9)",
+          "oklch(25% 0.0000 89.9)",
+          "oklch(35% 0.0000 89.9)",
+          "oklch(47% 0.0000 89.9)",
+          "oklch(59% 0.0000 89.9)",
+          "oklch(71% 0.0000 89.9)",
+          "oklch(83% 0.0000 89.9)",
+          "oklch(95% 0.0000 89.9)"
+        ]
+      },
+      "coursera-accent": {
+        "displayName": "Coursera Accent",
+        "role": "primary",
+        "tonalRamp": [
+          "oklch(15% 0.0253 257.9)",
+          "oklch(25% 0.0506 257.9)",
+          "oklch(35% 0.0717 257.9)",
+          "oklch(47% 0.0843 257.9)",
+          "oklch(59% 0.0843 257.9)",
+          "oklch(71% 0.0717 257.9)",
+          "oklch(83% 0.0422 257.9)",
+          "oklch(95% 0.0084 257.9)"
+        ]
+      },
+      "coursera-room": {
+        "displayName": "Coursera Room",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0113 265.1)",
+          "oklch(25% 0.0227 265.1)",
+          "oklch(35% 0.0321 265.1)",
+          "oklch(47% 0.0378 265.1)",
+          "oklch(59% 0.0378 265.1)",
+          "oklch(71% 0.0321 265.1)",
+          "oklch(83% 0.0189 265.1)",
+          "oklch(95% 0.0038 265.1)"
+        ]
+      },
+      "amazon-surface": {
+        "displayName": "Amazon Surface",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0096 254.3)",
+          "oklch(25% 0.0191 254.3)",
+          "oklch(35% 0.0271 254.3)",
+          "oklch(47% 0.0319 254.3)",
+          "oklch(59% 0.0319 254.3)",
+          "oklch(71% 0.0271 254.3)",
+          "oklch(83% 0.0160 254.3)",
+          "oklch(95% 0.0032 254.3)"
+        ]
+      },
+      "amazon-accent": {
+        "displayName": "Amazon Accent",
+        "role": "primary",
+        "tonalRamp": [
+          "oklch(15% 0.0455 69.3)",
+          "oklch(25% 0.0909 69.3)",
+          "oklch(35% 0.1288 69.3)",
+          "oklch(47% 0.1515 69.3)",
+          "oklch(59% 0.1515 69.3)",
+          "oklch(71% 0.1288 69.3)",
+          "oklch(83% 0.0758 69.3)",
+          "oklch(95% 0.0152 69.3)"
+        ]
+      },
+      "amazon-room": {
+        "displayName": "Amazon Room",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0053 259.7)",
+          "oklch(25% 0.0106 259.7)",
+          "oklch(35% 0.0151 259.7)",
+          "oklch(47% 0.0177 259.7)",
+          "oklch(59% 0.0177 259.7)",
+          "oklch(71% 0.0151 259.7)",
+          "oklch(83% 0.0089 259.7)",
+          "oklch(95% 0.0018 259.7)"
+        ]
+      },
+      "internships-surface": {
+        "displayName": "Internships Surface",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0044 84.6)",
+          "oklch(25% 0.0088 84.6)",
+          "oklch(35% 0.0125 84.6)",
+          "oklch(47% 0.0147 84.6)",
+          "oklch(59% 0.0147 84.6)",
+          "oklch(71% 0.0125 84.6)",
+          "oklch(83% 0.0074 84.6)",
+          "oklch(95% 0.0015 84.6)"
+        ]
+      },
+      "internships-ink": {
+        "displayName": "Internships Ink",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0021 95.3)",
+          "oklch(25% 0.0043 95.3)",
+          "oklch(35% 0.0061 95.3)",
+          "oklch(47% 0.0071 95.3)",
+          "oklch(59% 0.0071 95.3)",
+          "oklch(71% 0.0061 95.3)",
+          "oklch(83% 0.0036 95.3)",
+          "oklch(95% 0.0007 95.3)"
+        ]
+      },
+      "internships-room": {
+        "displayName": "Internships Room",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0012 84.6)",
+          "oklch(25% 0.0025 84.6)",
+          "oklch(35% 0.0035 84.6)",
+          "oklch(47% 0.0042 84.6)",
+          "oklch(59% 0.0042 84.6)",
+          "oklch(71% 0.0035 84.6)",
+          "oklch(83% 0.0021 84.6)",
+          "oklch(95% 0.0004 84.6)"
+        ]
+      },
+      "ucsd-surface": {
+        "displayName": "Ucsd Surface",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0182 259.2)",
+          "oklch(25% 0.0364 259.2)",
+          "oklch(35% 0.0515 259.2)",
+          "oklch(47% 0.0606 259.2)",
+          "oklch(59% 0.0606 259.2)",
+          "oklch(71% 0.0515 259.2)",
+          "oklch(83% 0.0303 259.2)",
+          "oklch(95% 0.0061 259.2)"
+        ]
+      },
+      "ucsd-accent": {
+        "displayName": "Ucsd Accent",
+        "role": "primary",
+        "tonalRamp": [
+          "oklch(15% 0.0532 90.8)",
+          "oklch(25% 0.1064 90.8)",
+          "oklch(35% 0.1507 90.8)",
+          "oklch(47% 0.1773 90.8)",
+          "oklch(59% 0.1773 90.8)",
+          "oklch(71% 0.1507 90.8)",
+          "oklch(83% 0.0886 90.8)",
+          "oklch(95% 0.0177 90.8)"
+        ]
+      },
+      "ucsd-room": {
+        "displayName": "Ucsd Room",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0080 258.3)",
+          "oklch(25% 0.0160 258.3)",
+          "oklch(35% 0.0227 258.3)",
+          "oklch(47% 0.0267 258.3)",
+          "oklch(59% 0.0267 258.3)",
+          "oklch(71% 0.0227 258.3)",
+          "oklch(83% 0.0134 258.3)",
+          "oklch(95% 0.0027 258.3)"
+        ]
+      },
+      "clarity-surface": {
+        "displayName": "Clarity Surface",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0139 130.2)",
+          "oklch(25% 0.0279 130.2)",
+          "oklch(35% 0.0395 130.2)",
+          "oklch(47% 0.0464 130.2)",
+          "oklch(59% 0.0464 130.2)",
+          "oklch(71% 0.0395 130.2)",
+          "oklch(83% 0.0232 130.2)",
+          "oklch(95% 0.0046 130.2)"
+        ]
+      },
+      "clarity-ink": {
+        "displayName": "Clarity Ink",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0220 142.8)",
+          "oklch(25% 0.0440 142.8)",
+          "oklch(35% 0.0624 142.8)",
+          "oklch(47% 0.0734 142.8)",
+          "oklch(59% 0.0734 142.8)",
+          "oklch(71% 0.0624 142.8)",
+          "oklch(83% 0.0367 142.8)",
+          "oklch(95% 0.0073 142.8)"
+        ]
+      },
+      "clarity-accent": {
+        "displayName": "Clarity Accent",
+        "role": "primary",
+        "tonalRamp": [
+          "oklch(15% 0.0263 131.5)",
+          "oklch(25% 0.0526 131.5)",
+          "oklch(35% 0.0745 131.5)",
+          "oklch(47% 0.0877 131.5)",
+          "oklch(59% 0.0877 131.5)",
+          "oklch(71% 0.0745 131.5)",
+          "oklch(83% 0.0439 131.5)",
+          "oklch(95% 0.0088 131.5)"
+        ]
+      },
+      "clarity-room": {
+        "displayName": "Clarity Room",
+        "role": "neutral",
+        "tonalRamp": [
+          "oklch(15% 0.0067 139.4)",
+          "oklch(25% 0.0134 139.4)",
+          "oklch(35% 0.0190 139.4)",
+          "oklch(47% 0.0224 139.4)",
+          "oklch(59% 0.0224 139.4)",
+          "oklch(71% 0.0190 139.4)",
+          "oklch(83% 0.0112 139.4)",
+          "oklch(95% 0.0022 139.4)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Gallery display \u2014 Space Grotesk",
+        "purpose": "Preferred gallery direction; deliberate continuity with the original font, familiarity advisory acknowledged."
+      },
+      "identity": {
+        "displayName": "Identity \u2014 Space Grotesk",
+        "purpose": "Portfolio identity."
+      },
+      "description": {
+        "displayName": "DM Sans description",
+        "purpose": "Short factual summaries on front faces."
+      },
+      "back-body": {
+        "displayName": "DM Sans reading",
+        "purpose": "Complete concise back summaries; no scrolling or disclosure."
+      },
+      "dock-label": {
+        "displayName": "DM Sans controls",
+        "purpose": "Compact navigation inside the perspective room."
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-face",
+        "value": "6px 30px 65px -25px #000a",
+        "purpose": "Physical front and back faces."
+      },
+      {
+        "name": "dock",
+        "value": "0 14px 32px #0005",
+        "purpose": "Compact room controls."
+      }
+    ],
+    "motion": [
+      {
+        "name": "card-position",
+        "value": ".85s cubic-bezier(.18,.8,.2,1)",
+        "purpose": "Bring selected experience forward in 3D."
+      },
+      {
+        "name": "card-flip",
+        "value": ".8s cubic-bezier(.18,.8,.2,1)",
+        "purpose": "Rotate actual front/back faces; disabled transition for reduced motion."
+      },
+      {
+        "name": "room-color",
+        "value": "background-color .6s ease",
+        "purpose": "Ambient room follows the active experience."
+      },
+      {
+        "name": "preview-handoff",
+        "value": "opacity .2s ease-out",
+        "purpose": "Fade preview out before full front content arrives."
+      },
+      {
+        "name": "front-content-handoff",
+        "value": "opacity .25s ease-out .28s",
+        "purpose": "Delay full front content for staged selection handoff."
+      },
+      {
+        "name": "receding-preview-delay",
+        "value": ".25s",
+        "purpose": "Show brand preview after the card begins receding; reduced motion removes transitions."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mobile-picker",
+        "value": "900px"
+      },
+      {
+        "name": "mobile-card",
+        "value": "520px"
+      },
+      {
+        "name": "wide-room",
+        "value": "1800px"
+      },
+      {
+        "name": "compact-profile-row",
+        "value": "650px"
+      }
+    ],
+    "authority": {
+      "preferredDirection": "3D Gallery",
+      "productionDeployed": false,
+      "originalPreserved": true,
+      "currentCardOrder": [
+        "Google",
+        "Coursera",
+        "Amazon",
+        "Internships",
+        "UC San Diego",
+        "Clarity Networth"
+      ],
+      "roleFraming": "Google current; Coursera subscriptions/coupons and Amazon previous; internships grouped; UC San Diego education.",
+      "comparisonAlternatives": [
+        "Board",
+        "Kinetic",
+        "Chapters",
+        "Original"
+      ],
+      "archivedNotAuthority": [
+        "Refresh",
+        "Editorial",
+        "Atlas",
+        "Workbench",
+        "Map",
+        "Guide"
+      ]
+    },
+    "fontAssets": {
+      "stylesheet": "fonts/fonts.css",
+      "format": "Local TTF",
+      "fileCount": 14,
+      "licenses": [
+        "fonts/Space-Grotesk-OFL.txt",
+        "fonts/DM-Sans-OFL.txt",
+        "fonts/Syne-OFL.txt",
+        "fonts/Kalam-OFL.txt"
+      ]
+    },
+    "previewNote": "Snippets show current visual primitives; gallery.js owns true flipping, card selection, Google back replacement, and screenshot switching.",
+    "rampNote": "Synthesized OKLCH ramps are panel aids, not implemented brand scales.",
+    "sourceFiles": [
+      "options/gallery.css",
+      "options/gallery.js",
+      "options/gallery.html",
+      "fonts/fonts.css",
+      "images/SOURCES.md"
+    ],
+    "currentStructure": {
+      "cardCount": 6,
+      "profile": "Left aside only for Google: name, portrait, Google AI Observability, previous Coursera/Amazon. No Clarity mention or project action. Compact two-column grid above scene <=650px.",
+      "backReading": "Complete summaries fit in card; no scrolling or disclosure.",
+      "room": "Full width, perspective, soft shadow, 8px card edges; no horizon/floor plane.",
+      "neighborPreviews": "Fixed responsive CSS:651\u20131799 next60%/previous40%,width70px;>=1800 next72%/previous28%,width180px;<=650 next51%/previous49%,width80px,rotate(-90deg),min-height0. Intended exposed logos remain under regression verification.",
+      "project": "Three screenshot views switch inside the Clarity card.",
+      "aboutContact": "Select Google and replace its back content.",
+      "focus": "Room focus highlights the compact dock.",
+      "googleWorldShift": "7vw right for Google, 10vw wide and tablet, none at <=650px. No reserved sidebar grid column.",
+      "neighborSpacing": "49% viewport capped 900px desktop;65% below800px;59% below520px."
+    }
+  },
+  "components": [
+    {
+      "name": "Google card front",
+      "kind": "card",
+      "refersTo": "google-card",
+      "description": "Normal Google experience front; conditional profile is a separate left aside.",
+      "html": "<article class=\"ds-google\"><small>Software Engineer \u00b7 AI Observability</small><h2>Google</h2><p>Understanding how AI systems behave.</p><button>Click to flip \u21b6</button></article>",
+      "css": ".ds-google{width:500px;max-width:100%;height:330px;padding:32px 38px;background:#f7f8fa;color:#24282e;box-shadow:6px 30px 65px -25px #000a;display:flex;flex-direction:column;border-bottom:5px solid #4285f4}.ds-google small{font:600 12px \"DM Sans\",sans-serif}.ds-google h2{font:500 64px/.96 \"Space Grotesk\",sans-serif;letter-spacing:-.04em;margin:38px 0 20px}.ds-google p{font:17px/1.5 \"DM Sans\",sans-serif;max-width:38ch;margin:0}.ds-google button{align-self:flex-start;margin-top:auto;border:0;border-bottom:1px solid currentColor;background:none;color:inherit;padding:9px 0;font:600 13px \"DM Sans\",sans-serif;cursor:pointer}.ds-google button:hover{text-decoration:underline}.ds-google button:focus-visible{outline:2px solid var(--accent,#b4c8ff);outline-offset:5px}@media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+    },
+    {
+      "name": "Clarity screenshot controls",
+      "kind": "button",
+      "refersTo": "project-preview-tab",
+      "description": "Net worth, Cash flow, and Investments switch screenshots inside the project card.",
+      "html": "<div class=\"ds-project-tabs\" role=\"group\" aria-label=\"Clarity product preview\"><button aria-pressed=\"true\">Net worth</button><button aria-pressed=\"false\">Cash flow</button><button aria-pressed=\"false\">Investments</button></div>",
+      "css": ".ds-project-tabs{display:flex;flex-wrap:wrap;gap:7px;background:#d5e6c6;padding:12px}.ds-project-tabs button{border:1px solid #76906c;background:none;color:#294c27;padding:7px 10px;border-radius:4px;font:11px \"DM Sans\",sans-serif;cursor:pointer}.ds-project-tabs button[aria-pressed=true]{background:#294c27;border-color:#294c27;color:#fff}.ds-project-tabs button:focus-visible{outline:2px solid #294c27;outline-offset:5px}"
+    },
+    {
+      "name": "Gallery dock",
+      "kind": "nav",
+      "refersTo": "gallery-dock",
+      "description": "Compact room navigation; the runtime supplies all six experiences.",
+      "html": "<nav class=\"ds-dock\" aria-label=\"Choose an experience\"><button aria-label=\"Previous experience\" disabled>\u2190</button><button aria-current=\"true\">Google</button><button>Coursera</button><button aria-label=\"Next experience\">\u2192</button></nav>",
+      "css": ".ds-dock{display:inline-flex;align-items:center;gap:7px;padding:8px;border-radius:13px;background:#232630;box-shadow:0 14px 32px #0005}.ds-dock button{border:0;padding:12px;border-radius:6px;background:none;color:#c9cbd6;font:500 12px/1.2 \"DM Sans\",sans-serif;cursor:pointer}.ds-dock button[aria-current=true]{background:var(--accent,#b4c8ff);color:#151923}.ds-dock button:hover:not(:disabled):not([aria-current=true]){background:#ffffff0b;color:#fff}.ds-dock button:disabled{opacity:.32;cursor:default}.ds-dock button:focus-visible{outline:2px solid var(--accent,#b4c8ff);outline-offset:5px}@media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+    },
+    {
+      "name": "Mobile experience picker",
+      "kind": "custom",
+      "refersTo": "gallery-dock",
+      "description": "Native selector replaces company labels on narrow screens.",
+      "html": "<label class=\"ds-picker-label\">Choose an experience <select class=\"ds-picker\"><option>Google</option><option>Coursera</option><option>Amazon</option><option>Internships</option><option>UC San Diego</option><option>Clarity Networth</option></select></label>",
+      "css": ".ds-picker-label{display:inline-flex;flex-direction:column;gap:8px;font:12px \"DM Sans\",sans-serif;color:#c1bdcb}.ds-picker{background:#232630;color:var(--accent,#b4c8ff);border:0;padding:11px 12px;font:500 14px/1.3 \"DM Sans\",sans-serif;cursor:pointer}.ds-picker:focus-visible{outline:2px solid var(--accent,#b4c8ff);outline-offset:5px}@media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+    },
+    {
+      "name": "Flip-back action",
+      "kind": "button",
+      "refersTo": "google-card",
+      "description": "Explicit keyboard-accessible counterpart to clicking the card back body.",
+      "html": "<button class=\"ds-flip-back\">Flip back <span aria-hidden=\"true\">\u21b6</span></button>",
+      "css": ".ds-flip-back{border:0;background:#f7f8fa;color:#24282e;padding:8px 0;font:12px \"DM Sans\",sans-serif;text-decoration:underline;text-underline-offset:5px;cursor:pointer}.ds-flip-back span{margin-left:8px}.ds-flip-back:hover{text-decoration-thickness:2px}.ds-flip-back:focus-visible{outline:2px solid var(--accent,#b4c8ff);outline-offset:5px}@media(prefers-reduced-motion:reduce){*{transition:none!important}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "An experience gallery",
+    "overview": "The user selected the 3D Gallery as the preferred local direction. Six physical cards form a full-width perspective room, with soft cast shadows and tangible thickness. The room palette follows the selected experience. This documents the current local source; the original portfolio remains available and has not been replaced through deployment.\n\nGoogle is first and current, followed by Coursera, Amazon, grouped Internships, UC San Diego education, and Clarity Networth. A left profile sidebar shows Tyler's name, portrait, current role and previous employers only while Google is selected. It hides and becomes inert when browsing other cards. Google remains a normal experience card; there is no separate profile opening card. Coursera centers subscriptions and coupons; Google centers AI observability. Copy is direct, factual, and concise enough to fit each card back.",
+    "keyCharacteristics": [
+      "Six Google-first cards, with a left profile sidebar visible only for Google.",
+      "True front/back rotation and complete back copy without scrolling or disclosure.",
+      "A full-width perspective room with soft shadow and visible card thickness.",
+      "Stable brand previews on receding neighbors.",
+      "A compact dock, mobile picker, and Clarity screenshot switching inside its card."
+    ],
+    "rules": [
+      {
+        "name": "The Active Room Rule",
+        "body": "Change room background, selected navigation, and focus accent together when selecting an experience; preserve each card's company palette.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "**Do** keep exactly six cards with Google current and first.",
+      "**Do** show the left profile sidebar only while Google is selected, with a compact mobile row above the scene.",
+      "**Do** keep back copy complete, direct, and short enough to fit without scrolling.",
+      "**Do** use stable brand previews and screenshot controls inside the Clarity card.",
+      "**Do** preserve the compact dock, mobile picker, and locally available original."
+    ],
+    "donts": [
+      "**Don't** embed the profile in Google, add a separate profile card, or keep the sidebar visible for every experience.",
+      "**Don't** add scrolling back readers, disclosure controls, or below-fold showcases.",
+      "**Don't** draw a horizon or a floor plane behind the cards.",
+      "**Don't** reposition or resize preview logos from runtime measurements.",
+      "**Don't** turn UC San Diego back into a standalone teaching card or invent Google achievements."
+    ]
+  }
+}

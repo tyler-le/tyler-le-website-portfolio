@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#102b3b">
+  <meta name="description" content="Tyler Le, Software Engineer at Coursera. Experience at Amazon and an upcoming role at Google in AI Observability.">
+  <title>Tyler Le — Career map</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Syne:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="map.css">
+  <script defer src="stories.js"></script>
+  <script defer src="map.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#story">Skip to the selected story</a>
+  <header class="masthead">
+    <a class="wordmark" href="#about" aria-label="Tyler Le, meet Tyler">Tyler Le<span>Software Engineer</span></a>
+    <div class="masthead-links"><a href="../files/Tyler_Le_Resume.pdf" target="_blank" rel="noopener">Resume <span aria-hidden="true">↗</span></a><a href="mailto:le.tyler.h@gmail.com">Get in touch <span aria-hidden="true">↗</span></a></div>
+  </header>
+  <main class="map-layout">
+    <section class="territory" aria-label="Explore Tyler’s career map">
+      <div class="map-intro"><h1>Career map</h1><p>Software Engineer at Coursera.<br>Joining Google in AI Observability, December 2026.</p></div>
+      <nav class="topology" aria-label="Career and portfolio stories">
+        <svg class="connections" viewBox="0 0 800 660" aria-hidden="true">
+          <circle class="orbit" cx="391" cy="334" r="190"/>
+          <path class="career-path" d="M140 220 C190 30 490 30 560 175"/>
+          <path class="future-path" d="M560 175 C680 172 739 255 670 340"/>
+          <path class="branch" d="M140 220 Q220 330 360 335 M560 175 Q505 313 360 335 M360 335 Q455 470 570 500 M360 335 Q220 440 245 545"/>
+          <path class="selected-connection" d="M360 335 Q505 313 560 175"/>
+          <circle class="junction" cx="360" cy="335" r="6"/>
+          <circle class="route-point" cx="332" cy="93" r="4"/>
+          <circle class="route-point future-point" cx="707" cy="240" r="4"/>
+        </svg>
+        <a class="map-node node-about" href="#about" data-story="about" aria-current="page"><span class="node-dot"><img src="../images/about-image.jpg" alt=""></span><strong>Meet Tyler</strong><span>Software Engineer</span></a>
+        <a class="map-node node-amazon" href="#amazon" data-story="amazon"><span class="node-dot"></span><strong>Amazon</strong><span>2024–2026 · Previously</span></a>
+        <a class="map-node node-coursera" href="#coursera" data-story="coursera"><span class="node-dot"></span><strong>Coursera</strong><span>2026–Present · Now</span></a>
+        <a class="map-node node-google" href="#google" data-story="google"><span class="node-dot"></span><strong>Google</strong><span>Dec 2026 · Next</span></a>
+        <a class="map-node node-project" href="#project" data-story="project"><span class="node-dot"></span><strong>Video bot</strong><span>Personal project</span></a>
+        <a class="map-node node-contact" href="#contact" data-story="contact"><span class="node-dot"></span><strong>Contact</strong><span>Email · GitHub · LinkedIn</span></a>
+      </nav>
+      <div class="map-key"><span><i></i>Career path</span><span><i class="key-future"></i>Incoming role</span><p>Select a name to read about the work.</p></div>
+    </section>
+    <section class="reader" id="story" aria-label="Selected story" tabindex="-1">
+      <div class="reader-top"><span id="location-label">Meet Tyler</span><span class="reader-position" aria-hidden="true"><i></i> You are here</span></div>
+      <div id="story-content"></div>
+      <div class="story-switcher" id="story-switcher" aria-label="Explore Coursera work" hidden><a href="#coursera" data-detail="platforms">Shared platforms</a><a href="#coursera-services" data-detail="trust">Backend services</a></div>
+      <footer class="reader-footer"><a href="#coursera" id="continue-link">Explore my work <span aria-hidden="true">→</span></a><a class="back-to-map" href="#map-top">Back to map <span aria-hidden="true">↑</span></a></footer>
+    </section>
+  </main>
+  <script>document.querySelector('.territory').id='map-top';</script>
+</body>
+</html>
