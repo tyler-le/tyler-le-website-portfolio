@@ -1,21 +1,33 @@
-# Tyler Le portfolio — local design exploration
+# Tyler Le — Portfolio
 
-[Website](https://www.tylerle.dev/) · [3D Gallery](https://www.tylerle.dev/options/gallery.html) · [Design comparison](https://www.tylerle.dev/compare.html)
+[Visit tylerle.dev](https://www.tylerle.dev/)
 
-A personal portfolio with interactive experience cards and alternative layouts. The original `index.html`, `styles.css`, and `script.js` are preserved; the gallery and comparison use separate pages.
+An interactive portfolio built with HTML, CSS, and JavaScript. Six company-colored cards present work at Google, Coursera, and Amazon, grouped internships, education at UC San Diego, and the Clarity Networth personal project.
 
-Run `python3 -m http.server 4317 --bind 127.0.0.1` from this directory, then open http://127.0.0.1:4317/compare.html. No build or package installation is needed.
+Click the active card to flip it for more detail, or select a neighboring card to bring it forward. Dragging, arrow keys, and the navigation dock also browse the gallery. The Google view includes a profile with resume, contact, and LinkedIn links. Clarity includes switchable product screenshots using demo data. The layout adapts for mobile and respects reduced-motion preferences.
 
-The comparison includes:
+## Run locally
 
-- **3D Gallery** (`options/gallery.html`): the preferred direction. Six company-colored cards rotate through a full-width perspective scene. Click the active card to flip; click a neighboring card to select it. Drag, arrow keys, and the compact dock also browse. The profile appears alongside Google only. Complete back summaries fit within each card. The Personal Project card contains interactive Clarity Networth product previews using demo data.
-- **Kinetic scroll** (`options/kinetic.html`): large moving typography and scrolling experience panels.
-- **Post-it board** (`options/board.html`): organized notes with explicit topics and experience stories.
-- **Chapters** (`options/chapters.html`): composed screens with an expanded experience index.
-- **Original**: the preserved production page.
+No build step or dependencies are required to serve the site:
 
-Google is framed as the current role in AI Observability from December 2026. Coursera spans January–December 2026, focused on subscriptions and coupons; Amazon ended January 2026. Internships share one gallery card, UC San Diego represents education, and Clarity Networth is the featured personal project. The supplied updated PDF is `files/Tyler_Le_Resume.pdf`.
+```sh
+python3 -m http.server 4317 --bind 127.0.0.1
+```
 
-`options/gallery.js` owns the gallery's concise copy and interactions. Other alternatives share narrative content in `options/stories.js`. Fonts and company logos are local; image provenance is in `images/SOURCES.md`. Earlier design experiments remain in `options/` but are omitted from comparison navigation. `options/build.py` regenerates only the early alternatives and should not be used to regenerate the current gallery.
+Open [localhost:4317](http://127.0.0.1:4317/).
 
-`options/verify-gallery.cjs` checks gallery navigation, flips, exposed neighbor selection, back text fit, responsive layout, and Clarity screenshot switching at desktop and mobile widths. It uses Playwright with Node 20+, optionally resolving Playwright through `PLAYWRIGHT_MODULE`.
+## Project files
+
+- `index.html`: homepage and navigation.
+- `styles.css`: responsive layout, brand colors, perspective, and transitions.
+- `script.js`: card content, flips, navigation, camera movement, and screenshot controls.
+- `fonts/`: self-hosted fonts and licenses.
+- `images/`: portraits, company logos, and demo screenshots; provenance in `images/SOURCES.md`.
+- `files/Tyler_Le_Resume.pdf`: current downloadable resume.
+- `tests/verify-gallery.cjs`: Playwright checks for navigation, flips, card text fit, images, and responsive layout at 320, 390, 1440, and 2540 pixels. Requires Node 20+ and Playwright; `PLAYWRIGHT_MODULE` can specify an existing installation.
+
+The selected gallery is the homepage. Earlier design explorations and the comparison page are excluded from the site.
+
+## Deployment
+
+GitHub Pages publishes the root of `main` to [www.tylerle.dev](https://www.tylerle.dev/). Pushing to `main` triggers the Pages build and deployment. `CNAME` preserves the custom domain.

@@ -9,7 +9,7 @@ const out=path.join(__dirname,'../.impeccable/review');
     page.setDefaultTimeout(12000);
     const errors=[];
     page.on('pageerror',error=>errors.push(error.message));
-    await page.goto('http://127.0.0.1:4317/options/gallery.html',{waitUntil:'domcontentloaded'});
+    await page.goto(process.env.PORTFOLIO_URL||'http://127.0.0.1:4317/',{waitUntil:'domcontentloaded'});
     await page.evaluate(()=>Promise.race([document.fonts.ready,new Promise(r=>setTimeout(r,5000))]));
     await page.waitForFunction(()=>[...document.images].every(image=>image.complete));
     const active=()=>page.locator('.experience-panel[data-active=true]');

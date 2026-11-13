@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-13T06:58:51.168121+00:00",
+  "generatedAt": "2026-11-13T07:11:44.490304+00:00",
   "title": "Design System: Tyler Le \u2014 3D Gallery",
   "extensions": {
     "colorMeta": {
@@ -441,8 +441,7 @@
     ],
     "authority": {
       "preferredDirection": "3D Gallery",
-      "productionDeployed": false,
-      "originalPreserved": true,
+      "originalPreserved": "Archived outside repository, not a shipped route.",
       "currentCardOrder": [
         "Google",
         "Coursera",
@@ -452,51 +451,36 @@
         "Clarity Networth"
       ],
       "roleFraming": "Google current; Coursera subscriptions/coupons and Amazon previous; internships grouped; UC San Diego education.",
-      "comparisonAlternatives": [
-        "Board",
-        "Kinetic",
-        "Chapters",
-        "Original"
-      ],
-      "archivedNotAuthority": [
-        "Refresh",
-        "Editorial",
-        "Atlas",
-        "Workbench",
-        "Map",
-        "Guide"
-      ]
+      "productionHomepage": "Root gallery source promoted; deployment status not asserted."
     },
     "fontAssets": {
       "stylesheet": "fonts/fonts.css",
       "format": "Local TTF",
-      "fileCount": 14,
+      "fileCount": 8,
       "licenses": [
         "fonts/Space-Grotesk-OFL.txt",
-        "fonts/DM-Sans-OFL.txt",
-        "fonts/Syne-OFL.txt",
-        "fonts/Kalam-OFL.txt"
+        "fonts/DM-Sans-OFL.txt"
       ]
     },
     "previewNote": "Snippets show current visual primitives; gallery.js owns true flipping, card selection, Google back replacement, and screenshot switching.",
     "rampNote": "Synthesized OKLCH ramps are panel aids, not implemented brand scales.",
     "sourceFiles": [
-      "options/gallery.css",
-      "options/gallery.js",
-      "options/gallery.html",
+      "index.html",
+      "styles.css",
+      "script.js",
       "fonts/fonts.css",
       "images/SOURCES.md"
     ],
     "currentStructure": {
       "cardCount": 6,
-      "profile": "Left aside only for Google: name, portrait, Google AI Observability, previous Coursera/Amazon. No Clarity mention or project action. Compact two-column grid above scene <=650px.",
+      "profile": "Google-only left aside: name, Google AI Observability, portrait and past Coursera/Amazon; Resume/Contact/LinkedIn beneath past-company text beside portrait. No Clarity/project action. Mobile single-column profile: name, current role, portrait/context row.",
       "backReading": "Complete summaries fit in card; no scrolling or disclosure.",
       "room": "Full width, perspective, soft shadow, 8px card edges; no horizon/floor plane.",
       "neighborPreviews": "Fixed responsive CSS:651\u20131799 next60%/previous40%,width70px;>=1800 next72%/previous28%,width180px;<=650 next51%/previous49%,width80px,rotate(-90deg),min-height0. Intended exposed logos remain under regression verification.",
       "project": "Three screenshot views switch inside the Clarity card.",
       "aboutContact": "Select Google and replace its back content.",
       "focus": "Room focus highlights the compact dock.",
-      "googleWorldShift": "7vw right for Google, 10vw wide and tablet, none at <=650px. No reserved sidebar grid column.",
+      "googleWorldShift": "7vw Google default;6vw at>=1800px;10vw tablet;none<=650px. Wide profile left:max(4vw,calc(50vw - 800px));no reserved grid column.",
       "neighborSpacing": "49% viewport capped 900px desktop;65% below800px;59% below520px."
     }
   },
@@ -544,7 +528,7 @@
   ],
   "narrative": {
     "northStar": "An experience gallery",
-    "overview": "The user selected the 3D Gallery as the preferred local direction. Six physical cards form a full-width perspective room, with soft cast shadows and tangible thickness. The room palette follows the selected experience. This documents the current local source; the original portfolio remains available and has not been replaced through deployment.\n\nGoogle is first and current, followed by Coursera, Amazon, grouped Internships, UC San Diego education, and Clarity Networth. A left profile sidebar shows Tyler's name, portrait, current role and previous employers only while Google is selected. It hides and becomes inert when browsing other cards. Google remains a normal experience card; there is no separate profile opening card. Coursera centers subscriptions and coupons; Google centers AI observability. Copy is direct, factual, and concise enough to fit each card back.",
+    "overview": "The user selected the 3D Gallery as the production homepage. Six physical cards form a full-width perspective room, with soft cast shadows and tangible thickness. The room palette follows the selected experience. The selected gallery now occupies the root homepage source (`index.html`, `styles.css`, and `script.js`). Earlier designs are archived outside the repository; no comparison pages ship. This document records the promoted source and does not assert deployment status.\n\nGoogle is first and current, followed by Coursera, Amazon, grouped Internships, UC San Diego education, and Clarity Networth. A left profile sidebar shows Tyler's name, portrait, current role, previous employers, and profile links only while Google is selected. It hides and becomes inert when browsing other cards. Google remains a normal experience card; there is no separate profile opening card. Coursera centers subscriptions and coupons; Google centers AI observability. Copy is direct, factual, and concise enough to fit each card back.",
     "keyCharacteristics": [
       "Six Google-first cards, with a left profile sidebar visible only for Google.",
       "True front/back rotation and complete back copy without scrolling or disclosure.",
@@ -564,7 +548,7 @@
       "**Do** show the left profile sidebar only while Google is selected, with a compact mobile row above the scene.",
       "**Do** keep back copy complete, direct, and short enough to fit without scrolling.",
       "**Do** use stable brand previews and screenshot controls inside the Clarity card.",
-      "**Do** preserve the compact dock, mobile picker, and locally available original."
+      "**Do** preserve the compact dock and mobile picker."
     ],
     "donts": [
       "**Don't** embed the profile in Google, add a separate profile card, or keep the sidebar visible for every experience.",

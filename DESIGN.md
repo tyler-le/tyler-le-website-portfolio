@@ -1,6 +1,6 @@
 ---
 name: Tyler Le — 3D Gallery
-description: Preferred local gallery direction with preserved comparison alternatives; not deployed.
+description: Production portfolio gallery at https://www.tylerle.dev/.
 colors:
   gallery-ink: "#f3f0f8"
   gallery-muted: "#c1bdcb"
@@ -96,9 +96,9 @@ components:
 
 **Creative North Star: "An experience gallery"**
 
-The user selected the 3D Gallery as the preferred local direction. Six physical cards form a full-width perspective room, with soft cast shadows and tangible thickness. The room palette follows the selected experience. This documents the current local source; the original portfolio remains available and has not been replaced through deployment.
+The user selected the 3D Gallery as the production homepage. Six physical cards form a full-width perspective room, with soft cast shadows and tangible thickness. The room palette follows the selected experience. The selected gallery now occupies the root homepage source (`index.html`, `styles.css`, and `script.js`). Earlier designs are archived outside the repository; no comparison pages ship. This document records the promoted source and does not assert deployment status.
 
-Google is first and current, followed by Coursera, Amazon, grouped Internships, UC San Diego education, and Clarity Networth. A left profile sidebar shows Tyler's name, portrait, current role and previous employers only while Google is selected. It hides and becomes inert when browsing other cards. Google remains a normal experience card; there is no separate profile opening card. Coursera centers subscriptions and coupons; Google centers AI observability. Copy is direct, factual, and concise enough to fit each card back.
+Google is first and current, followed by Coursera, Amazon, grouped Internships, UC San Diego education, and Clarity Networth. A left profile sidebar shows Tyler's name, portrait, current role, previous employers, and profile links only while Google is selected. It hides and becomes inert when browsing other cards. Google remains a normal experience card; there is no separate profile opening card. Coursera centers subscriptions and coupons; Google centers AI observability. Copy is direct, factual, and concise enough to fit each card back.
 
 **Key Characteristics:**
 
@@ -112,7 +112,7 @@ Google is first and current, followed by Coursera, Amazon, grouped Internships, 
 
 ### Primary
 
-The active experience sets the accent and room background. Google uses near-white with pale blue support; Coursera uses saturated blue; Amazon pairs navy and orange; UC San Diego pairs navy and yellow. Internships use a warm neutral. Clarity uses pale green with deep green text. Frontmatter values come from `options/gallery.js`; supporting tints are interface colors, not claims of official brand specifications.
+The active experience sets the accent and room background. Google uses near-white with pale blue support; Coursera uses saturated blue; Amazon pairs navy and orange; UC San Diego pairs navy and yellow. Internships use a warm neutral. Clarity uses pale green with deep green text. Frontmatter values come from `script.js`; supporting tints are interface colors, not claims of official brand specifications.
 
 ### Neutral
 
@@ -124,9 +124,9 @@ Pale text and muted lavender-gray support the dark room. The compact dock uses i
 
 **Display and identity:** Space Grotesk. **Body, metadata, controls:** DM Sans. Both use sans-serif fallbacks. Space Grotesk deliberately continues the original identity; its familiarity is an acknowledged advisory, not a user rejection.
 
-Gallery titles use medium-weight display type and tight tracking. The conditional profile sidebar uses an oversized name (76px by default, 88px on wide displays, 52px below 900px). At 650px and below, it becomes a compact two-column grid above the scene with a 35px name, role on the left, and portrait on the right. Google retains the normal experience-card title layout. Back headings use (36px), then (31px) and (25px) at narrower breakpoints. Back body uses (16px), then (15px) and (14px), with brief paragraphs rather than resume bullets.
+Gallery titles use medium-weight display type and tight tracking. The conditional profile sidebar uses an oversized name (76px by default, 88px on wide displays, 52px below 900px). At 650px and below, it becomes a compact single-column profile above the scene with a 35px name, current role beneath it, then a portrait/context row. Google retains the normal experience-card title layout. Back headings use (36px), then (31px) and (25px) at narrower breakpoints. Back body uses (16px), then (15px) and (14px), with brief paragraphs rather than resume bullets.
 
-Fonts load locally through `fonts/fonts.css`; fourteen TTF files and OFL licenses cover Space Grotesk, DM Sans, Syne, and Kalam. Syne and Kalam belong to comparison alternatives, not the gallery's display pairing.
+Fonts load locally through `fonts/fonts.css`; eight TTF files and the two OFL licenses cover Space Grotesk and DM Sans. Removed alternative fonts are not part of the shipped system.
 
 ## Layout
 
@@ -134,7 +134,7 @@ The exhibition keeps a full-width room; the conditional profile sidebar overlays
 
 JavaScript sets card width to (64%) of the viewport, capped at (1160px), or (83%) below (520px). Cards are (450px) high by default, (480px) on wide displays, (420px) below (900px), and (400px) below (520px). Interior padding scales from (32px 38px) to (27px), then (24px). All back copy fits in this area without an internal scroll or detail disclosure.
 
-The selected card comes forward and tilts slightly; neighbors recede, showing stable brand artwork intended to remain visible and clickable. The Google-selected world shifts right (7vw), or (10vw) on wide displays and below 900px, to clear the profile. At 650px and below, the profile moves above the room and that world shift is removed.
+The selected card comes forward and tilts slightly; neighbors recede, showing stable brand artwork intended to remain visible and clickable. The Google-selected world shifts right (7vw), or (6vw) at 1800px and above and (10vw) below 900px, to clear the profile. On wide displays, the profile left edge uses `max(4vw, calc(50vw - 800px))` to keep it visually grouped with the card. At 650px and below, the profile moves above the room and that world shift is removed.
 
 Neighbor spacing is (49%) of the viewport, capped at (900px), on desktop; (65%) below 800px and (59%) below 520px. At widths from 651px to 1799px, fixed preview anchors sit at (60%) on next cards and (40%) on previous cards with (70px) artwork. At 1800px and above they use (72%)/(28%) and (180px) artwork. At 650px and below they use (51%)/(49%), (80px) artwork, a (-90deg) rotation, and no minimum preview height. These are fixed CSS treatments, not measurement-driven resizing. Exposed-logo visibility remains an implementation verification concern; this document records the intended composition, not a test pass.
 
@@ -154,17 +154,13 @@ Cards are broad square-edged planes. The compact dock and its controls use small
 
 **Experience card:** Clicking the active main body flips either way; explicit controls support keyboard access. Neighbor clicks first select that experience. Links, screenshot controls, text selection, and dragging retain their own behavior. Inactive faces are excluded from normal keyboard access.
 
-**Conditional profile sidebar:** A separate left aside includes Tyler's name, portrait, current Google AI Observability context, and previous Coursera/Amazon context. Resume, Contact, and LinkedIn links sit directly under the previous-company text beside the portrait. It contains no Clarity mention or project action; the project remains a separate destination. It is visible and interactive only while Google is selected. The Google front contains the experience itself; the profile is not inside it. On mobile the aside becomes a compact grid row above the room. Its layout explicitly resets archived sidebar rules.
+**Conditional profile sidebar:** A separate left aside includes Tyler's name, portrait, current Google AI Observability context, and previous Coursera/Amazon context. Resume, Contact, and LinkedIn links sit directly under the previous-company text beside the portrait. It contains no Clarity mention or project action; the project remains a separate destination. It is visible and interactive only while Google is selected. The Google front contains the experience itself; the profile is not inside it. On mobile the aside uses one column above the room: name, current role, then a portrait/context row with profile links beneath the previous-company text. Its layout explicitly resets archived sidebar rules.
 
 **Card back:** Short, complete paragraphs appear immediately. There is no “Read experience,” “Show less,” scrolling reader, or progressive disclosure. Internships have three compact role summaries. UC San Diego is an education card, with the degree and instructional-assistant context on its back. About and Contact select Google and replace its back content; flipping back restores its normal summary. The resume remains separate; Clarity's back links to its GitHub repository.
 
 **Project preview controls:** Three small buttons switch Net worth, Cash flow, and Investments screenshots in place. Selected state uses deep green with white text and `aria-pressed`. Screenshot interaction does not flip the card.
 
 **Dock:** Selected label uses the current accent. Arrows disable at sequence boundaries. The mobile picker exposes the same six destinations, and a live status announces the current experience. Keyboard focus on the room highlights the compact dock rather than outlining the entire viewport.
-
-### Comparison alternatives
-
-Board, Kinetic, expanded Chapters, and Original remain local comparisons. Their palettes, display fonts, and structures do not redefine the preferred gallery. Earlier exploratory files are archived references. Preserve the original locally and keep publishing separate from local iteration.
 
 ## Do's and Don'ts
 
@@ -174,7 +170,7 @@ Board, Kinetic, expanded Chapters, and Original remain local comparisons. Their 
 - **Do** show the left profile sidebar only while Google is selected, with a compact mobile row above the scene.
 - **Do** keep back copy complete, direct, and short enough to fit without scrolling.
 - **Do** use stable brand previews and screenshot controls inside the Clarity card.
-- **Do** preserve the compact dock, mobile picker, and locally available original.
+- **Do** preserve the compact dock and mobile picker.
 
 ### Don't:
 
